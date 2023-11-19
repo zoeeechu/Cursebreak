@@ -19,25 +19,20 @@ if(current_cd > 0){
 	current_cd -= 1;
 }
 
-if(current_active > 0){
-	current_active -= 1;
-	isActive = true;
-}
-
+// auto reloading if out of ammo
 if(type == "gun"){
-if(ammo[selected_weapon] == 0 && reload_timer != 0){
-	reload_timer -= 1;
-	show_debug_message($"reload: {reload_timer}")
-	if(reloading == false){
-		reloading = true;
+	if(ammo[selected_weapon] == 0 && reload_timer != 0){
+		reload_timer -= 1;
+		show_debug_message($"reload: {reload_timer}")
+		if(reloading == false){
+			reloading = true;
+		}
 	}
-	
-}
 
-if(ammo[selected_weapon] != max_ammo && reload_timer == 0){
-ammo[selected_weapon] = max_ammo;
-reload_timer = reload;
-reloading = false;
-show_debug_message("done reloading")
-}
+	if(ammo[selected_weapon] != max_ammo && reload_timer == 0){
+		ammo[selected_weapon] = max_ammo;
+		reload_timer = reload;
+		reloading = false;
+		show_debug_message("done reloading")
+	}
 }
