@@ -99,10 +99,27 @@ cooldown = equipped_weapon[? "cooldown"];
 active =  equipped_weapon[? "active_frames"];
 startup =  equipped_weapon[? "startup_frames"];
 
+// laser
+weapon_list[5] = ds_map_create();
+ds_map_add(weapon_list[5], "name", "railgun");
+ds_map_add(weapon_list[5], "max_ammo",3);
+ds_map_add(weapon_list[5], "cooldown", 175);
+ds_map_add(weapon_list[5], "sprite", spr_sniper);
+ds_map_add(weapon_list[5], "recoil", 40);
+ds_map_add(weapon_list[5], "damage", 50);
+ds_map_add(weapon_list[5], "bullet_speed", 150);
+ds_map_add(weapon_list[5], "reload", 200);
+ds_map_add(weapon_list[5], "type", "gun");
+ds_map_add(weapon_list[5], "active_frames", 0);
+ds_map_add(weapon_list[5], "startup_frames", 10);
+
+
 ammo[array_length(weapon_list)-1] = equipped_weapon[? "max_ammo"];
+
 for(var i = 0; i < array_length(weapon_list)-1; i++){
 	ammo[i] = weapon_list[i][? "max_ammo"];
 }
+
 current_cd = 0;
 current_active = 0;
 isActive = false;
