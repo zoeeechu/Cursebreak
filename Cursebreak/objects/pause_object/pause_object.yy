@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Controller",
-    "path": "folders/Objects/Controller.yy",
+    "name": "Game Functions",
+    "path": "folders/Objects/Game Functions.yy",
   },
   "parentObjectId": null,
   "persistent": false,

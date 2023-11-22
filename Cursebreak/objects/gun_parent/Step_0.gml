@@ -1,11 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//follows player object 
 x = obj_player.x;
 y = obj_player.y;
 
+// makes sprite follow mouse position 
 image_angle = point_direction(x,y,mouse_x,mouse_y);
 
+// flips sprite depending on where mouse is pointing 
 if(image_angle >= 90 && image_angle <= 270){
 	image_yscale = -1
 	facingDirection = -1
@@ -29,6 +32,7 @@ if(type == "gun"){
 		}
 	}
 
+// restores ammo once reloading is done
 	if(ammo[selected_weapon] != max_ammo && reload_timer == 0){
 		ammo[selected_weapon] = max_ammo;
 		reload_timer = reload;

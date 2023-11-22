@@ -3,8 +3,7 @@
   "resourceVersion": "1.0",
   "name": "obj_laser",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"enemy_parent","path":"objects/enemy_parent/enemy_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -12,7 +11,10 @@
     "name": "bullets",
     "path": "folders/Objects/Weapons/bullets.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "projectile_parent",
+    "path": "objects/projectile_parent/projectile_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

@@ -1,3 +1,5 @@
+// replaces current weapon stats with the new weapon stats when switched
+
 with(obj_weapon){
 selected_weapon = argument0;
 var equipped_weapon = weapon_list[selected_weapon];
@@ -14,5 +16,5 @@ active =  equipped_weapon[? "active_frames"];
 startup =  equipped_weapon[? "startup_frames"];
 
 sprite_index = sprite;
-ammo[selected_weapon] = ammo[selected_weapon];
+reload_timer = reload;
 }

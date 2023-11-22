@@ -1,0 +1,2 @@
+text = "WASD TO MOVE \n LEFT CLICK TO USE WEAPON \n SHIFT TO DASH "
+targetRm = room

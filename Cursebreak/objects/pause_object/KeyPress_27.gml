@@ -3,9 +3,9 @@
 
 if(!paused){
 instance_deactivate_all(true);
-paused = true;
+paused = !paused;
 
 } else if (paused){
 	instance_activate_all();
-	paused = false;
+	paused = !paused;
 }
