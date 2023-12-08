@@ -1,0 +1,2 @@
+text = "SHOP";
+targetRm = Shop;
