@@ -1,0 +1,2 @@
+text = "TUTORIAL"
+targetRm = Tutorial

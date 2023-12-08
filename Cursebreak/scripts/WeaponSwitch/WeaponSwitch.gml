@@ -1,7 +1,7 @@
 // replaces current weapon stats with the new weapon stats when switched
-
-with(obj_weapon){
-selected_weapon = argument0;
+function WeaponSwitch(argument0, argument1){
+with(argument0){ // player or enemy weapon obj
+selected_weapon = argument1; 
 var equipped_weapon = weapon_list[selected_weapon];
 name = equipped_weapon[? "name"];
 sprite = equipped_weapon[? "sprite"];
@@ -17,4 +17,5 @@ startup =  equipped_weapon[? "startup_frames"];
 
 sprite_index = sprite;
 reload_timer = reload;
+}
 }

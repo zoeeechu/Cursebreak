@@ -7,6 +7,6 @@ if(position_meeting(mouse_x, mouse_y, self)){
 		ChangeDifficulty();
 	}
 	room_goto(targetRm)
-	show_debug_message($"Difficulty: {obj_settings.difficulty_names[obj_settings.difficulty_mode]}")
-	show_debug_message($"Atk scale: {obj_settings.atk_scale} || Hp scale: {obj_settings.hp_scale}")
+	show_debug_message($"Difficulty: {obj_config.difficulty_names[obj_config.difficulty_mode]}")
+	show_debug_message($"Atk scale: {obj_config.atk_scale} || Hp scale: {obj_config.hp_scale}")
 }	

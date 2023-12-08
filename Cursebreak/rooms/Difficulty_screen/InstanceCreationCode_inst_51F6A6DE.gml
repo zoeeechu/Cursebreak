@@ -1,1 +1,1 @@
-text = obj_settings.difficulty_names[obj_settings.difficulty_mode]
+text = obj_config.difficulty_names[obj_config.difficulty_mode]

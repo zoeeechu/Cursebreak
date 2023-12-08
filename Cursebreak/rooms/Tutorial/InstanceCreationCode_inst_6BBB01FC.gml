@@ -1,0 +1,1 @@
+WeaponSwitch(self,0)

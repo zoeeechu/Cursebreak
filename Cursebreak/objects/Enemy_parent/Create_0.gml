@@ -3,9 +3,11 @@
 randomise();
 
 // multiply stats by difficulty selected
-max_hp =  100 * obj_settings.hp_scale
-hp = 100 * obj_settings.hp_scale;
-damage = 5 * obj_settings.atk_scale;
+max_hp =  100 * obj_config.hp_scale
+hp = 100 * obj_config.hp_scale;
+damage = 5 * obj_config.atk_scale;
+
+sprite_scale = 1
 
 detection_range = 150; // how far the enemy can detect the player
 
@@ -19,6 +21,7 @@ gravity_speed = 0.35;
 walk_speed = 5;
 movementX = 0;
 movementY = 0;
+slope_tol = 10
 
 jump_counter = 0;
 jump_speed = 10;

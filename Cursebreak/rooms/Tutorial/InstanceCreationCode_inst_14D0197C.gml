@@ -1,0 +1,1 @@
+incomingDirection = 0 

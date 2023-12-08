@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_weapon",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -10,8 +12,8 @@
     "path": "folders/Objects/Weapons.yy",
   },
   "parentObjectId": {
-    "name": "gun_parent",
-    "path": "objects/gun_parent/gun_parent.yy",
+    "name": "weapon_parent",
+    "path": "objects/weapon_parent/weapon_parent.yy",
   },
   "persistent": true,
   "physicsAngularDamping": 0.1,

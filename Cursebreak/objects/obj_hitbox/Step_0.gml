@@ -5,12 +5,12 @@
 active_time -= 1;
 if(active_time == 0){
 	ended = true;
-	with(obj_enemy){
+	with(enemy_parent){
 		invincible = false;
 		inKnockback = false;
 	}
 }
 
 if(ended){
-	instance_destroy(self);
+	instance_destroy(self)
 }
